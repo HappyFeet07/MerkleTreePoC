@@ -84,9 +84,9 @@ const main = async () => {
     opt,
     { value: gasToPay, gasLimit: 1000000 }
   );
-  // const verifyReceipt = await verifyTx.wait();
-  // // transaction hash log
-  // console.log(`verify transaction hash: ${verifyReceipt.transactionHash}`);
+  const verifyReceipt = await verifyTx.wait();
+  // transaction hash log
+  console.log(`verify transaction hash: ${verifyReceipt.transactionHash}`);
 }
 
 main().then();
